@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(img/desk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* MAIN DIVS */
+.wrapper {
+  height: 99.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  background-image: url(img/bill.png);
+  background-size: 500px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.select-optx {
+  display: flex;
+  flex-direction: row;
+}
+
+/* END OF MAIN DIVS */
+/* INPUTS */
+select {
+  border-radius: 20px;
+  background-color: #F1F7C2;
+  border: 0.5px solid lightgrey;
+}
+
+select:hover, select:active {
+  background: white;
+}
+
+input[type=number] {
+  width: 30px;
+  margin: 5px 0;
+  line-height: 29px;
+  border-radius: 5px;
+  border: 0.5px solid lightgrey;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  text-align: center;
+  background-color: #F1F7C2;
+}
+
+input[type=number]:focus {
+  width: 30%;
+  outline: none;
+  background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+span {
+  font-family: sans;
+  font-weight: bold;
+  font-size: 16.5px;
+}
+
+.dropdown {
+  padding: 0 5px;
+  font-size: 15px;
+  border-color: lightgrey;
+  margin: 14px 0;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 3px;
+}
+
+#other {
+  margin-top: -3px;
+  width: 30px;
+  display: none;
+}
+
+#ppl {
+  margin-top: 15px;
+}
+
+/* END OF INPUTS */
+/* ANSWER */
+.feedback {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+
+#answer {
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+}
+
+#error {
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+/* END OF ANSWER */
+/* Titles */
+.title {
+  line-height: 5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: lighter;
+  font-size: 46px;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: lighter;
+  font-size: 20px;
+  align-self: right;
+}

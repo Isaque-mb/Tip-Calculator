@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+    <form class="content">
+
+      <div class="title">
+        <h1> Tip Calculator </h1>
+        <h2>by Isaque Bandao</h2>
+      </div>
+
+
+
+
+      <span>- Price of the Bill -</span><input type="number" id="bill" placeholder="$" />
+
+
+      <div class="select-optx">
+        <select class="dropdown" name="options">
+          <option disabled selected value="0">Tip Options</option>
+          <option value="0.05">5% - Horrible</option>
+          <option value="0.1">10% - Bad</option>
+          <option value="0.15">15% - Regular</option>
+          <option value="0.2">20% - Good</option>
+          <option value="0.3">30% - Great</option>
+          <option value="1">Other</option>
+        </select>
+        <select class="dropdown" id="test">
+          <option selected value="nothing">-TESTING-</option>
+          <option value="correct">Correct</option>
+          <option value="no-bill">No Bill</option>
+          <option value="no-other">No Other</option>
+          <option value="no-ppl">No People</option>
+          <option value="two-dots">Two Dots</option>
+          <option value="two-ee">Two e's</option>
+        </select>
+      </div>
+
+
+      <div>
+        <input type="number" id="other" placeholder="#">
+      </div>
+
+      <span>- Number of People Paying -</span><input type="number" id="ppl" placeholder="#">
+
+
+      <div class="feedback">
+        <p id="answer"></p>
+        <p id="error"></p>
+      </div>
+
+
+
+
+
+
+    </form>
+
+
+
+  </div>
+</body>
+<script src="script.js">
+
+</script>
+
+</html>
