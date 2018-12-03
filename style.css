@@ -48,7 +48,7 @@ select:hover, select:active {
 }
 
 input[type=number] {
-  width: 30px;
+  width: 150px;
   margin: 5px 0;
   line-height: 29px;
   border-radius: 5px;
@@ -56,11 +56,11 @@ input[type=number] {
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   text-align: center;
-  background-color: #F1F7C2;
+  background-color: #D8DEAE;
 }
 
 input[type=number]:focus {
-  width: 30%;
+  width: 40px;
   outline: none;
   background-color: white;
 }
@@ -86,19 +86,30 @@ span {
 
 #other {
   margin-top: -3px;
-  width: 30px;
   display: none;
 }
 
 #ppl {
-  margin-top: 15px;
+  margin-top: 13px;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 0.5px solid black;
+  background: white;
+  cursor: pointer;
 }
 
 /* END OF INPUTS */
 /* ANSWER */
 .feedback {
-  width: 400px;
-  height: 100px;
+  margin-top: 25px;
+  width: 390px;
+  height: 50px;
+  line-height: 0px;
   text-align: center;
 }
 
@@ -109,9 +120,10 @@ span {
 }
 
 #error {
-  font-size: 30px;
+  font-size: 23px;
   color: red;
   font-weight: bold;
+  margin-top: 5px;
 }
 
 /* END OF ANSWER */

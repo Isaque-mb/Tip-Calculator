@@ -32,8 +32,8 @@
 
 
       <div class="select-optx">
-        <select class="dropdown" name="options">
-          <option disabled selected value="0">Tip Options</option>
+        <select class="dropdown" id="tip-option" name="tip-option">
+          <option selected disabled value="0">Tip Options</option>
           <option value="0.05">5% - Horrible</option>
           <option value="0.1">10% - Bad</option>
           <option value="0.15">15% - Regular</option>
@@ -42,8 +42,9 @@
           <option value="1">Other</option>
         </select>
         <select class="dropdown" id="test">
-          <option selected value="nothing">-TESTING-</option>
-          <option value="correct">Correct</option>
+          <option selected disabled value="nothing">Test</option>
+          <option value="reg-tip">Regular tip</option>
+          <option value="other-tip">Other tip</option>
           <option value="no-bill">No Bill</option>
           <option value="no-other">No Other</option>
           <option value="no-ppl">No People</option>
@@ -52,17 +53,16 @@
         </select>
       </div>
 
-
-      <div>
-        <input type="number" id="other" placeholder="#">
-      </div>
+      <input type="number" id="other" placeholder="#">
 
       <span>- Number of People Paying -</span><input type="number" id="ppl" placeholder="#">
+
+      <button type="button" id="bttn" name="button">Calculate</button>
 
 
       <div class="feedback">
         <p id="answer"></p>
-        <p id="error"></p>
+        <p id="error"><br /></p>
       </div>
 
 
